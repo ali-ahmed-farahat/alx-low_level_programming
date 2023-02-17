@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
+/**
  * main - prints the alphabet
  * Return: ALways 0 (Success)
  */
