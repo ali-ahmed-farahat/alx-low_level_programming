@@ -11,7 +11,8 @@ int main(void)
 {
 char q, e, low;
 int i;
-
+q = 'q';
+e = 'e';
 for (low = 'a'; low <= 'z'; low++)
 {
 if (low != e && low != q)
