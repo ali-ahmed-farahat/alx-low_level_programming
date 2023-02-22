@@ -7,7 +7,7 @@
  * Return: 0 or 1 (depending on the letter)
  */
 
-int _islower(char c)
+int _islower(int c)
 {
 if (c >= 97 && c <= 122)
 {
