@@ -9,6 +9,5 @@
 
 int _abs(int c)
 {
-int c;
 return abs(c);
 }
