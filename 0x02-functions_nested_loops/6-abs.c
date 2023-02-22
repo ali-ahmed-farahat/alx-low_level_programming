@@ -9,5 +9,7 @@
 
 int _abs(int c)
 {
-return abs(c);
+int x;
+x = abs(c);
+return x;
 }
