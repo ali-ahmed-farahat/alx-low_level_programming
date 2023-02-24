@@ -10,6 +10,5 @@
 
 int mul(int a, int b)
 {
-printf("the result of multiplication = %d", a * b);
-return (0);
+return (a * b);
 }
