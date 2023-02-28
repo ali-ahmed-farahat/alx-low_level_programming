@@ -29,4 +29,5 @@ void puts_half(char *str)
 			i++;
 		}
 	}
+	printf("\n");
 }
