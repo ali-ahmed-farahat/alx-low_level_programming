@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * print_rev - prints reverse of a string.
+ * rev_string - prints reverse of a string.
  * @s:array containing the string.
  * Return: Always 0 (Success)
  */
@@ -12,7 +12,7 @@
 
 void rev_string(char *s)
 {
-int len = 0,index = 0;
+int len = 0, index = 0;
 char tmp;
 while (s[index++])
 {
