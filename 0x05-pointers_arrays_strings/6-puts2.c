@@ -4,8 +4,8 @@
 #include <string.h>
 
 /**
- * puts2 - prints reverse of a string.
- * @s:array containing the string.
+ * puts2 - prints every other character
+ * @str: string
  * Return: Void (Success)
  */
 
