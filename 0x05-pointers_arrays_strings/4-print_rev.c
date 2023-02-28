@@ -6,7 +6,6 @@
 /**
  * print_rev - prints reverse of a string.
  * @s:array containing the string.
- * @c:integer that keeps count
  * Return: Always 0 (Success)
  */
 
