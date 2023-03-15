@@ -13,14 +13,14 @@ int i, j, k, l;
 int **a;
 
 if (width <= 0 || height <= 0)
-	return(NULL);
+	return (NULL);
 a = malloc(sizeof(int *) * height);
 if (a == NULL)
 {
 free(a);
 return (NULL);
 }
-for (i =0; i < height; i++)
+for (i = 0; i < height; i++)
 {
 a[i] = malloc(sizeof(int) * width);
 if (a[i] == NULL)
@@ -33,7 +33,7 @@ free(a);
 return (NULL);
 }
 }
-for ( k =0; k < height; k++)
+for (k = 0; k < height; k++)
 {
 for (l = 0; l < width; l++)
 {
