@@ -34,6 +34,7 @@ void print_grid(int **grid, int width, int height)
  *
  * Return: Always 0.
  */
+int **alloc_grid(int width, int height);
 int main(void)
 {
     int **grid;
