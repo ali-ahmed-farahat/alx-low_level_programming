@@ -43,7 +43,7 @@ void print_name_uppercase(char *name)
  *   *
  *    * Return: Always 0.
  *     */
-void print_name(char *name, void (*f)(char *));
+
 int main(void)
 {
 	    print_name("Bob", print_name_as_is);
