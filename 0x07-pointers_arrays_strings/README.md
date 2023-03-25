@@ -1,1 +1,1 @@
-This is a readme file for the 0x07 pointers, arrays and strings
+This is a README file for ALX's 0x07 pointers, arrays and strings Project
