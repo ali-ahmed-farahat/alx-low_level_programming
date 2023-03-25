@@ -11,20 +11,21 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	va_list list;
 	unsigned int i;
-	char *airport;
-	va_list ap;
+	char *str;
 
-	va_start(ap, n);
+	va_start(list, n);
 	for (i = 0; i < n; i++)
 	{
-	airport = va_arg(ap, char *);
-	printf("%s", airport);
-	if (separator && i < n - 1)
-	{
-	printf("%s", separator);
+		str = va_arg(list, char *);
+		if (str)
+			printf("%s", str);
+		else
+			printf("(nil)");
+		if (i < n - 1 && separator)
+			printf("%s", separator);
 	}
-	}
+	va_end(list);
 	printf("\n");
-	va_end(ap);
 }
