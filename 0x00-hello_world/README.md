@@ -1,1 +1,1 @@
-Tnis is Readme file for 0x00-hello_world project
+This is Readme file for 0x00-hello_world project
