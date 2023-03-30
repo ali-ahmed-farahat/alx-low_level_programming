@@ -6,7 +6,7 @@
 /**
  * print_list - function printing list + return
  * number of it's elements
- * @list_t: the first list element
+ * @h: the first list element
  * Return: the number of nodes in the list
  */
 
