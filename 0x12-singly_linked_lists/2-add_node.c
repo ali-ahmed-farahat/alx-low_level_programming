@@ -18,8 +18,8 @@ char *duplicate;
 list_t *l_new;
 l_new = malloc(sizeof(list_t));
 
-    if (l_new == NULL)
-        return (NULL);
+if (l_new == NULL)
+return (NULL);
 
 duplicate = strdup(str);
 len = strlen(duplicate);
