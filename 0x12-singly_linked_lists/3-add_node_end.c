@@ -12,40 +12,40 @@
  * Return: If the function fails - NULL.
  *         Otherwise - the address of the new element.
  */
-
 list_t *add_node_end(list_t **head, const char *str)
 {
-int len;
-char *duplicate;
-list_t *l_new, *last;
-l_new = malloc(sizeof(list_t));
+	char *dup;
+	int len;
+	list_t *new, *last;
 
-*head = l_new;
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
+		return (NULL);
 
-if (l_new == NULL)
-return (NULL);
-duplicate = strdup(str);
-len = strlen(duplicate);
+	dup = strdup(str);
+	if (str == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
 
-if (str == NULL)
-{
-free(l_new);
-return (NULL);
-}
+	for (len = 0; str[len];)
+		len++;
 
-l_new->len = len;
-l_new->str = duplicate;
-l_new->next = *head;
+	new->str = dup;
+	new->len = len;
+	new->next = NULL;
 
-if (*head == NULL)
-*head = l_new;
-else
-{
-last = *head;
+	if (*head == NULL)
+		*head = new;
 
-while (last->next != NULL)
-last = last->next;
-last->next = l_new;
-}
-return (*head);
+	else
+	{
+		last = *head;
+		while (last->next != NULL)
+			last = last->next;
+		last->next = new;
+	}
+
+	return (*head);
 }
