@@ -46,6 +46,6 @@ last = *head;
 while (last->next != NULL)
 last = last->next;
 last->next = l_new;
-}    
+}
 return (*head);
 }
