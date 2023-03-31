@@ -23,8 +23,7 @@ l_new = malloc(sizeof(list_t));
 *head = l_new;
 
 if (l_new == NULL)
-    return NULL;
-
+return (NULL);
 duplicate = strdup(str);
 len = strlen(duplicate);
 
@@ -39,17 +38,14 @@ l_new->str = duplicate;
 l_new->next = *head;
 
 if (*head == NULL)
-    *head = l_new;
-
+*head = l_new;
 else
 {
 last = *head;
 
 while (last->next != NULL)
 last = last->next;
-
 last->next = l_new;
-}
-    
+}    
 return (*head);
 }
