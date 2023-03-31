@@ -29,7 +29,7 @@ len = strlen(duplicate);
 
 if (str == NULL)
 {
-free(new);
+free(l_new);
 return (NULL);
 }
 
