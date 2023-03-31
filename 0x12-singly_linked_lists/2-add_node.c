@@ -22,6 +22,11 @@ if (l_new == NULL)
 return (NULL);
 
 duplicate = strdup(str);
+if (duplicate == NULL)
+{
+		free(l_new);
+		return (NULL);
+}
 len = strlen(duplicate);
 
 l_new->len = len;
