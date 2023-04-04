@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * print_list - function printing + counting the
+ * print_listint - function printing + counting the
  * numbers of list
  * @h: the first element on the list
  * Return: the number of elements in the list
