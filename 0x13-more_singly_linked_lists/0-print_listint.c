@@ -14,8 +14,8 @@ int num;
 
   for (num = 0; h != NULL; num++)
   {
-  printf("%d\n", h->n);
-  h = h->next;
+    printf("%d\n", h->n);
+    h = h->next;
   }
 
 return (num);
