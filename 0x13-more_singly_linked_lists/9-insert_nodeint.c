@@ -20,7 +20,7 @@ listint_t *temp = malloc(sizeof(listint_t));
 temp->n = n;
 temp->next = NULL;
 
-if (!head)
+if (!temp || !head)
 return (0);
 
 if (idx == 0)
