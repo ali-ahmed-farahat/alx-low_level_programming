@@ -5,7 +5,7 @@
 
 /**
  * listint_len - Function counting no of nodes
- * @h: header to the first node 
+ * @h: header to the first node
  * Return: The number of nodes
  */
 
