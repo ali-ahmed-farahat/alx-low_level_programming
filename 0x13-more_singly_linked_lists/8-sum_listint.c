@@ -16,11 +16,11 @@ listint_t *current = head;
 if (!head)
 return (0);
 
-while(current)
+while (current)
 {
 sum += current->n;
 current = current->next;
 }
 
-return(sum);
+return (sum);
 }
