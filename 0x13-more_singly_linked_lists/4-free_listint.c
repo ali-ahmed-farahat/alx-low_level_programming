@@ -13,7 +13,7 @@ listint_t *temporary;
 
 while (head)
 {
-temporary = head;
+temporary = head->next;
 free(head);
 head = temporary;
 }
