@@ -21,7 +21,7 @@ temp->n = n;
 temp->next = NULL;
 
 if (!head)
-    return (0);
+return (0);
 
 if (idx == 0)
 {
@@ -31,7 +31,7 @@ return (temp);
 }
 
 
-for(num = 0; current && idx-1 > num; num++)
+for (num = 0; current && idx - 1 > num; num++)
 {
 current = current->next;
 }
