@@ -5,6 +5,7 @@
 /**
  * *add_nodeint - adds node in the beginning of list
  * @head: pointer to the first element of the list
+ * @n: the int value of the new node
  * Return: address of the new node
  */
 
