@@ -33,14 +33,6 @@ return (temp);
 
 for (num = 0; current && idx - 1 > num; num++)
 {
-
-if (i == idx - 1)
-{
-temp->next = current->next;
-current->next = temp;
-return (temp);
-}
-
 current = current->next;
 }
 temp->n = n;
