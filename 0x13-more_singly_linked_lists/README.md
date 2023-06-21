@@ -1,1 +1,0 @@
-This is a README file for Alx's 0x13-more_singly_linked_lists Project
