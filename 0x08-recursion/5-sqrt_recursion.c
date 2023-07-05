@@ -9,13 +9,14 @@
  */
 int squareRoot(int x, int y)
 {
-    if (y * y < x)
-        return squareRoot(x, y + 1);
+if (y * y < x)
+return squareRoot(x, y + 1);
 
-    if (y * y == x)
-        return y;
-    else
-        return -1;
+if (y * y == x)
+return (y);
+
+else
+return (-1);
 }
 
 /**
@@ -26,5 +27,5 @@ int squareRoot(int x, int y)
  */
 int _sqrt_recursion(int n)
 {
-    return squareRoot(n, 1);
+    return (squareRoot(n, 1));
 }
