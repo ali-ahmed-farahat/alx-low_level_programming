@@ -4,6 +4,6 @@ if ((*s) == '\0')
     printf("\n");
     return;
 }
-putchar(*s);
+printf("%c", *s);
 _puts_recursion(s + 1);
 }
