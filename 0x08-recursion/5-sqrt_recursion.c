@@ -9,12 +9,16 @@
 
 int squareRoot(int x, int y)
 {
+    
 if (y * y < x)
     return squareRoot(x, y + 1);
+
 if (y * y == x)
     return (y);
+
 else
     return (-1);
+
 }
 /**
  * _sqrt_recursion - calls squareRoot function to process guesses
