@@ -3,7 +3,7 @@
  * prime_check - function checking of number is prime or not recursively
  * @n: the number to be checked
  * @x: the number to test as a divisor
- * Return: (0) if not prime, (1) prime
+ * Return: 0 if not prime, 1 - prime
  */
 
 int prime_check(int n, int x)
@@ -18,7 +18,7 @@ return (prime_check(n, x - 1));
 }
 
 /**
- * prime_check - function checking of number is prime or not recursively
+ * is_prime_number - function checking of number is prime or not recursively
  * @n: the number to be checked
  * Return: (0) if not prime, (1) if prime
  */
