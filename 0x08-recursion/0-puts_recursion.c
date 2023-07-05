@@ -14,15 +14,3 @@ void _puts_recursion(char *s)
 	printf("%c", *s);
 	_puts_recursion(s + 1);
 }
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
-int main(void)
-{
-	char str[] = "Anooos";
-	_puts_recursion(str);
-	return 0;
-}
