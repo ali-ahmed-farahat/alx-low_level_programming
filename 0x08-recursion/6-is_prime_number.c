@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * prime_check - function checking of number is prime or not recursively
+ * prime_check - function checking if a number is prime or not recursively
  * @n: the number to be checked
  * @x: the number to test as a divisor
- * Return: 0 if not prime, 1 - prime
+ * Return: (0) if not prime, (1) prime
  */
 
 int prime_check(int n, int x)
