@@ -10,7 +10,7 @@
 int squareRoot(int x, int y)
 {
 if (y * y < x)
-return squareRoot(x, y + 1);
+return (squareRoot(x, y + 1));
 
 if (y * y == x)
 return (y);
@@ -27,5 +27,5 @@ return (-1);
  */
 int _sqrt_recursion(int n)
 {
-    return (squareRoot(n, 1));
+return (squareRoot(n, 1));
 }
