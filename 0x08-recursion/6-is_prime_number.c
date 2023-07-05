@@ -8,7 +8,7 @@
 
 int prime_check(int n, int x)
 {
-if(x == 1 || x == 0)
+if (x == 1 || x == 0)
 return (1);
 
 if (n % x == 0)
