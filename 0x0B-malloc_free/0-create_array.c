@@ -15,7 +15,6 @@ char *ptr = (char *)malloc(sizeof(char) * size);
 unsigned int i = 0;
 if (ptr == NULL)
 {
-// Memory allocation failed
 return NULL;
 }
 if (size == 0)
