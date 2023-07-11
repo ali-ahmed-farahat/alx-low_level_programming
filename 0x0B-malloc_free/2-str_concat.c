@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * str_concat - This function returns a pointer to a new string which is a concat of 2 strings
+ * str_concat - concat of 2 strings using malloc
  * @s1: the first string
  * @s2: the secound string
  * Return: pointer to the result string
