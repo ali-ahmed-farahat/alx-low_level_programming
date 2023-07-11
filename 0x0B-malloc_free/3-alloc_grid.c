@@ -19,17 +19,33 @@ int j;
 if (width <= 0 || height <= 0)
     return(NULL);
 
+array_2d = (int **) malloc(sizeof(int *) * height);
+if (array_2d != NULL)
+{
 for (i = 0; i < height; i++)
 {
 array_2d[i] = (int *)malloc(4 * width); /* where 4 is the size of int */
 
 if (array_2d[i] == NULL)
-    return (NULL);
-
+{
+while (i >= 0)
+{
+free(array_2d[i]);
+i--;
+}
+return (NULL);
+}
+else
+{
 for (j = 0; j < width; j++)
 {
 array_2d[i][j] = (int)0;
 }
 }
+}
+}
+else
+    return (NULL);
+
 return (array_2d);
 }
