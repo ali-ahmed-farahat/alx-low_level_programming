@@ -18,9 +18,10 @@ if (str == NULL)
 fprintf(stderr, "failed to allocate memory\n");
 return (NULL);
 }
-
+else
+{
 char *ptr = malloc(sizeof(char) * (strlen(str) + 1));
-i = 0;
+}
 
 if (ptr == NULL)
 {
@@ -28,7 +29,7 @@ fprintf(stderr, "failed to allocate memory\n");
 return (NULL);
 }
 
-while (i < int(strlen(str)))
+while (i < strlen(str))
 {
 ptr[i] = str[i];
 i++;
