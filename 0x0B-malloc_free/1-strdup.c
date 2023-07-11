@@ -11,16 +11,17 @@
 
 char *_strdup(char *str)
 {
-int string_length = strlen(str);
-char *ptr = malloc(sizeof(char) * (string_length + 1));
-int i = 0;
 
 if (str == NULL)
 {
 fprintf(stderr, "failed to allocate memory\n");
 return NULL;
 }
-  
+
+int string_length = strlen(str);
+char *ptr = malloc(sizeof(char) * (string_length + 1));
+int i = 0;
+
 if (ptr == NULL)
 {
 fprintf(stderr, "failed to allocate memory\n");
