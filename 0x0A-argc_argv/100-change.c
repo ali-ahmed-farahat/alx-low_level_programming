@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 void counter(int *num, int *coins, int coin_value)
 {
 
