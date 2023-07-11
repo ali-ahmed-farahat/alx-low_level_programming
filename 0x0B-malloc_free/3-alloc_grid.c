@@ -17,9 +17,10 @@ int i;
 int j;
 
 if (width <= 0 || height <= 0)
-    return(NULL);
+    return (NULL);
 
 array_2d = (int **) malloc(sizeof(int *) * height);
+
 if (array_2d != NULL)
 {
 for (i = 0; i < height; i++)
@@ -40,13 +41,13 @@ else
 {
 for (j = 0; j < width; j++)
 {
-array_2d[i][j] = (int)0;
+array_2d[i][j] = 0;
 }
 }
 }
 }
 else
-    return (NULL);
+return (NULL);
 
 return (array_2d);
 }
