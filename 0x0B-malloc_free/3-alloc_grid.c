@@ -20,17 +20,15 @@ if (width <= 0 || height <= 0)
     return(NULL);
 
 for (i = 0; i < height; i++)
-array_2d[i] = (int *)malloc(4 * width); /* where 4 is the size of int */
-
-if (array_2d == NULL)
-    return (NULL);
-
-for (i = 0; i < height; i++)
 {
+array_2d[i] = (int *)malloc(4 * width); /* where 4 is the size of int */
 for (j = 0; j < width; j++)
 {
 array_2d[i][j] = (int)0;
 }
 }
+if (array_2d == NULL)
+    return (NULL);
+
 return (array_2d);
 }
