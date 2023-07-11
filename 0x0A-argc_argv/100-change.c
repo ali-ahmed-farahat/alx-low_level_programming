@@ -38,15 +38,16 @@ return (coin_num);
 int main(int argc, char *argv[])
 {
 int num;
+int i;
 
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-for (int i = 0; argv[1][i] != '\0'; i++)
+for (i = 0; argv[1][i] != '\0'; i++)
 {
-//checking if the passed argument is digit
+/* checking if the passed argument is digit */
 if (!isdigit(argv[1][i]))
 {
 printf("Error: Invalid argument. Please provide a numeric argument.\n");
