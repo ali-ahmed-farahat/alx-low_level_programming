@@ -45,5 +45,6 @@ return (1);
 
 num = atoi(argv[1]);
 
-printf("%d", coins(num));
+printf("%d\n", coins(num));
+return (0);
 }
