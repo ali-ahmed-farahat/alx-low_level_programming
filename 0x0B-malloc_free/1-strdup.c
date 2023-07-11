@@ -18,10 +18,9 @@ if (str == NULL)
 printf("failed to allocate memory\n");
 return (NULL);
 }
-else
-{
+
 char *ptr = malloc(sizeof(char) * (strlen(str) + 1));
-}
+
 if (ptr == NULL)
 {
 printf("failed to allocate memory\n");
