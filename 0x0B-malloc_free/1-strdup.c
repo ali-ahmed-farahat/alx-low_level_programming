@@ -12,22 +12,22 @@
 char *_strdup(char *str)
 {
 unsigned int i;
+char *ptr;
 
 if (str == NULL)
 {
 printf("failed to allocate memory\n");
 return (NULL);
 }
-
-char *ptr = malloc(sizeof(char) * (strlen(str) + 1));
+  
+ptr = malloc(sizeof(char) * (strlen(str) + 1));
 
 if (ptr == NULL)
 {
 printf("failed to allocate memory\n");
 return (NULL);
 }
-else
-{
+
 while (i < strlen(str))
 {
 ptr[i] = str[i];
@@ -37,5 +37,4 @@ i++;
 ptr[i] = '\0';
 
 return (ptr);
-}
 }
