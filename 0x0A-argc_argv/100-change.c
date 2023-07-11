@@ -1,3 +1,4 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 void counter(int *num, int *coins, int coin_value)
@@ -43,7 +44,15 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
-
+for (int i = 0; argv[1][i] != '\0'; i++)
+{
+//checking if the passed argument is digit
+if (!isdigit(argv[1][i]))
+{
+printf("Error: Invalid argument. Please provide a numeric argument.\n");
+return 1;
+}
+}
 num = atoi(argv[1]);
 
 printf("%d\n", coins(num));
