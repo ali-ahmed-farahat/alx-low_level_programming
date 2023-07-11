@@ -15,7 +15,7 @@ char *ptr = (char *)malloc(sizeof(char) * size);
 unsigned int i = 0;
 if (ptr == NULL)
 {
-return NULL;
+return (NULL);
 }
 if (size == 0)
 {
