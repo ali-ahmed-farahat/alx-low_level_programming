@@ -29,7 +29,7 @@ for (index = 0; str[index]; index++)
 ptr[index] = str[index];
 }
 
-cpy[len] = '\0';
+ptr[len] = '\0';
 
 return (ptr);
 }
