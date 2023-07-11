@@ -16,8 +16,9 @@ int **array_2d;
 int i;
 int j;
 
-if (width <= 0 || height <= 0)
-    return (NULL);
+if (width <= 0 
+||height <= 0)
+return (NULL);
 
 array_2d = (int **) malloc(sizeof(int *) * height);
 
