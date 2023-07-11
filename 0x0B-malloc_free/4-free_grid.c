@@ -9,7 +9,7 @@
  * @height: the number of rows in the array
  * Return: void
  */
-void free_grid(int **grid, int height);
+void free_grid(int **grid, int height)
 {
 int i, j;
 if (height <= 0)
