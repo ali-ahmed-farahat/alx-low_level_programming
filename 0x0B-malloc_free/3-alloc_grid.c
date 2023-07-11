@@ -33,6 +33,7 @@ while (i >= 0)
 free(array_2d[i]);
 i--;
 }
+free(array_2d);
 return (NULL);
 }
 else
