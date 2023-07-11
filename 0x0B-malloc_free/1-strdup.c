@@ -15,19 +15,20 @@ unsigned int i;
 
 if (str == NULL)
 {
-fprintf(stderr, "failed to allocate memory\n");
+printf("failed to allocate memory\n");
 return (NULL);
 }
 else
 {
 char *ptr = malloc(sizeof(char) * (strlen(str) + 1));
-
+}
 if (ptr == NULL)
 {
-fprintf(stderr, "failed to allocate memory\n");
+printf("failed to allocate memory\n");
 return (NULL);
 }
-
+else
+{
 while (i < strlen(str))
 {
 ptr[i] = str[i];
