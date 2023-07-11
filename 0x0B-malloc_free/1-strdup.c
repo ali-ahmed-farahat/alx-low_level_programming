@@ -21,7 +21,6 @@ return (NULL);
 else
 {
 char *ptr = malloc(sizeof(char) * (strlen(str) + 1));
-}
 
 if (ptr == NULL)
 {
@@ -38,4 +37,5 @@ i++;
 ptr[i] = '\0';
 
 return (ptr);
+}
 }
