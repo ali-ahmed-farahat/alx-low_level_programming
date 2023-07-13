@@ -34,8 +34,8 @@ return(new_str);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *newstring;
-int i;
+char *newstring = NULL;
+int i = 0;
 
 if (s1 == NULL)
 s1 = "";
@@ -56,6 +56,7 @@ for (i = 0; i < n; i++)
 newstring[strlen(s1) + i] = s2[i];
 
 newstring[strlen(s1) + i] = '\0';
+return (newstring);
 }
 else
 {
@@ -70,6 +71,7 @@ for (i = 0; i < strlen(s2); i++)
 newstring[strlen(s1) + i] = s2[i];
 
 newstring[strlen(s1) + i] = '\0';
+return (newstring);
 }
 return (newstring);
 }
