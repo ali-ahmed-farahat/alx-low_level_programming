@@ -15,7 +15,7 @@ char *concat_first(char *str, char *new_str)
 {
 int i;
 
-for (i = 0; i < strlen(str); i++)
+for (i = 0; i < (int)strlen(str); i++)
 new_str[i] = str[i];
 
 return(new_str);
@@ -43,7 +43,7 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-if (n < strlen(s2))
+if (n < (unsigned int)strlen(s2))
 {
 newstring = malloc(strlen(s1) + n + 1);
 
@@ -52,7 +52,7 @@ return (NULL);
 
 concat_first(s1, newstring);
 
-for (i = 0; i < n; i++)
+for (i = 0; i < (int)n; i++)
 newstring[strlen(s1) + i] = s2[i];
 
 newstring[strlen(s1) + i] = '\0';
@@ -67,7 +67,7 @@ return (NULL);
 
 concat_first(s1, newstring);
 
-for (i = 0; i < strlen(s2); i++)
+for (i = 0; i < (int)strlen(s2); i++)
 newstring[strlen(s1) + i] = s2[i];
 
 newstring[strlen(s1) + i] = '\0';
