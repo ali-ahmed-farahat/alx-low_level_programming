@@ -24,7 +24,7 @@ ptr = malloc(nmemb * size);
 if (ptr == NULL)
 return (NULL);
 
-for(i = 0; i < (nmemb * size); i++)
+for (i = 0; i < (nmemb * size); i++)
 ptr[i] = 0;
 
 return (ptr);
