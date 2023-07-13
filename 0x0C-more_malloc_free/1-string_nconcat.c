@@ -18,7 +18,7 @@ int i;
 for (i = 0; i < (int)strlen(str); i++)
 new_str[i] = str[i];
 
-return(new_str);
+return (new_str);
 }
 
 
