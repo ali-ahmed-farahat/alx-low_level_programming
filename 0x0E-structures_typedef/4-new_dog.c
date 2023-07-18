@@ -22,7 +22,7 @@ doggie->owner = malloc(sizeof(owner));
 
 if (doggie->owner == NULL)
 {
-free(doggie->owner);
+free(doggie);
 return (NULL);
 }
 
@@ -30,7 +30,7 @@ doggie->name = malloc(sizeof(name));
 
 if (doggie->name == NULL)
 {
-free(doggie->name);
+free(doggie->owner);
 free(doggie);
 return (NULL);
 }
