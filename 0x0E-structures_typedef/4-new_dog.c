@@ -35,17 +35,12 @@ free(doggie);
 return (NULL);
 }
 
-doggie->age = age;
-
-for (i = 0; name[i]; i++)
-doggie->name[i] = name[i];
-
-doggie->name[i] = '\0';
-
-for (i = 0; owner[i]; i++)
-doggie->owner[i] = owner[i];
-
-doggie->owner[i] = '\0';
-
-return (doggie);
+	for (i = 0; name[i]; i++)
+		doggie->name[i] = name[i];
+	doggie->name[i] = '\0';
+	doggie->age = age;
+	for (i = 0; owner[i]; i++)
+		doggie->owner[i] = owner[i];
+	doggie->owner[i] = '\0';
+	return (doggie);
 }
