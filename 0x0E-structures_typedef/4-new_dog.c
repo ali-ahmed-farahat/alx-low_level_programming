@@ -18,19 +18,19 @@ doggie = malloc(sizeof(dog_t));
 if (doggie == NULL)
 return (NULL);
 
-doggie->owner = malloc(sizeof(owner));
+doggie->name = malloc(sizeof(name));
 
-if (doggie->owner == NULL)
+if (doggie->name == NULL)
 {
 free(doggie);
 return (NULL);
 }
 
-doggie->name = malloc(sizeof(name));
+doggie->owner = malloc(sizeof(owner));
 
-if (doggie->name == NULL)
+if (doggie->owner == NULL)
 {
-free(doggie->owner);
+free(doggie->name);
 free(doggie);
 return (NULL);
 }
