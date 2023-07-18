@@ -13,10 +13,10 @@ if (d == NULL)
 return;
 
 if ((d->owner) == NULL)
-d -> owner = "(nil)";
+d->owner = "(nil)";
 
 if ((d->name) == NULL)
-d -> name = "(nil)";
+d->name = "(nil)";
 
 printf("Name: %s\n", d->name);
 printf("Age: %f\n", d->age);
