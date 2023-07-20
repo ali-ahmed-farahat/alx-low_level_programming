@@ -8,7 +8,8 @@
  * @f: pointer to the function to be called
  */
 
-void print_name_as_is(char *name)
+void print_name(char *name, void (*f)(char *))
 {
-    printf("Hello, my name is %s\n", name);
+if (f != 0 && name != 0)
+f(name);
 }
