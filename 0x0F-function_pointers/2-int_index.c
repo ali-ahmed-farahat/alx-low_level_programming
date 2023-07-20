@@ -8,12 +8,15 @@
  * @cmp: comparing function
  * Return: index of the num if found or (-1) on failure
  */
- 
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 int i;
 
 if (size <= 0)
+return (-1);
+
+if (cmp == NULL)
 return (-1);
 
 if (array != NULL)
