@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_list - function printing linked list
@@ -22,6 +24,5 @@ printf("[%u] %s\n", h->len, h->str);
 h = h->next;
 counter++;
 }
-
 return (counter);
 }
