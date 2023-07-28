@@ -21,12 +21,11 @@ cur_len = current->len;
 cur_str = strdup(current->str);
 
 if (current->str == NULL)
-{
-cur_len = 0;
-cur_str = "(nil)";
-}
+printf("[%d] %s\n", 0, "(nil)");
 
-printf("[%d] %s\n", cur_len, cur_str);
+else
+printf("[%u] %s\n", cur_len, cur_str);
+
 counter++;
 current = current->next;
 }
