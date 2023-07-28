@@ -3,9 +3,11 @@
 #include "lists.h"
 
 /**
- * print_list - function printing linked list
- * @h: this is the header pointer to first item
- * Return: the number of elements printed
+ * print_list - print the elements of a linked list.
+ * @h: liked list head.
+ *
+ * Return: amount of nodes of the linked list.
+ *
  */
 
 size_t print_list(const list_t *h)
