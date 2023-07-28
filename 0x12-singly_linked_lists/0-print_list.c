@@ -13,7 +13,7 @@ size_t counter = 0;
 int cur_len;
 char *cur_str;
 
-current = h;
+current = (list_t*)h;
 
 while (current != NULL)
 {
