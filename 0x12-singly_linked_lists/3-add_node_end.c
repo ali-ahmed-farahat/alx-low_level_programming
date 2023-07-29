@@ -33,3 +33,12 @@ if (*head == NULL)
 *head = new_node;
 return (new_node);
 }
+
+while (temp->next != NULL)
+temp = temp->next;
+
+temp->next = new_node;
+
+
+return (new_node);
+}
