@@ -12,10 +12,7 @@ int i;
 if (head == NULL)
 return (NULL);
 
-if (index < 0)
-return (NULL);
-
-for (i = 0; i < index; i++)
+for (i = 0; i < (int)index; i++)
 head = head->next;
 
 return (head);
